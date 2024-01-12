@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/my-form.css">
+		<title>Form</title>
+	</head>
+	<body>
+		<a href="./index.html">Home</a>
+		<form>
+			<fieldset>
+				<legend>Personal info</legend>
+
+				<div class="form-elem">
+					<label for="firstn">First Name</label>
+					<input id="text"/>
+				</div>
+
+				<div class="form-elem">
+					<label for="lastn">Last Name</label>
+					<input
+						type="text"
+						id="lastn"
+					/>
+				</div>
+
+                <div class="form-elem">
+                    <label for="bth">Birthday</label>
+                    <input type="datetime-local" id="bth" checked />
+                </div>
+
+                <div>
+                    <label for="radio1">Gender</label>
+                    <div class="form-elem">
+                        <label for="radio1">Male</label>
+                        <input type="radio" id="radio1" name="Gender" />
+                    </div>
+                    <div class="form-elem">
+                        <label for="radio1">Female</label>
+                        <input type="radio" id="radio1" name="Gender" />
+                    </div>
+                </div>
+
+                <div class="form-elem">
+                    <label for="drive-ex">Drive expirience</label>
+                    <select id="drive-ex" name="model" multiple>
+                        <option value="---" selected>---</option>
+                        <option value="1-5">1-5 years</option>
+                        <option value="5-10">5-10 years</option>
+                        <option value="10-15">10-15 years</option>
+                        <option value="15-20">15-20 years</option>
+                    </select>
+                </div>
+    
+				
+			</fieldset>
+			<fieldset>
+				<legend>Contacts</legend>
+                <div class="form-elem">
+					<label for="email">Email</label>
+					<input type="email" id="email"/>
+				</div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone">
+                </div>
+                <div class="form-elem">
+                    <label for="address">Address</label>
+                    <textarea id="address" rows="6" cols="40"></textarea>
+                </div>
+				
+				
+			</fieldset>
+			<fieldset>
+				<legend>Car info</legend>
+
+                <div class="form-elem">
+                    <label for="brand">Brand</label>
+                    <select id="brand" name="model" multiple>
+                        <option value="---" selected>---</option>
+                        <option value="ford">Ford</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="bmw">BMW</option>
+                    </select>
+                </div>
+
+                <div class="form-elem">
+                    <label for="model">Model</label>
+                    <select id="model" name="model" multiple>
+                        <option value="---" selected>---</option>
+                        <option value="Mondeo 4">Mondeo 4</option>
+                        <option value="Fiesta 1.0">Fiesta 1.0</option>
+                        <option value="RAV 4">RAV 4</option>
+                        <option value="Camry">Camry</option>
+                        <option value="X5">X5</option>
+                        <option value="i4">i4</option>
+                    </select>
+                </div>
+
+                <div class="form-elem">
+					<label for="used">Used</label>
+					<input type="checkbox" id="used"/>
+				</div>
+
+                <div>
+                    <label for="radio1">Color</label>
+                    <div class="form-elem">
+                        <label for="radio1">Red</label>
+                        <input type="radio" id="radio1" name="Gender" />
+                    </div>
+                    <div class="form-elem">
+                        <label for="radio1">Black</label>
+                        <input type="radio" id="radio1" name="Gender" />
+                    </div>
+                    <div class="form-elem">
+                        <label for="radio1">Blue</label>
+                        <input type="radio" id="radio1" name="Gender" />
+                    </div>
+                    <div class="form-elem">
+                        <label for="radio1">White</label>
+                        <input type="radio" id="radio1" name="Gender" />
+                    </div>
+                    <div class="form-elem">
+                        <label for="radio1">Grey</label>
+                        <input type="radio" id="radio1" name="Gender" />
+                    </div>
+                </div>
+
+                <div class="range">
+                    <label for="range">Price</label>
+                    <input
+                        type="range"
+                        id="range"
+                        name="price"
+                        min="10"
+                        max="80"
+                        step="10"
+                        list="money"
+                    />
+                    <datalist id="money">
+                        <option value="10" label="10"></option>
+                        <option value="20" label="20"></option>
+                        <option value="30" label="30"></option>
+                        <option value="40" label="40"></option>
+                        <option value="50" label="50"></option>
+                        <option value="60" label="60"></option>
+                        <option value="70" label="70"></option>
+                        <option value="80" label="80"></option>
+                    </datalist>
+                </div>
+			</fieldset>
+			
+			<button type="reset">Cancel</button>
+			<button type="submit">Ok</button>
+		</form>
+	</body>
+</html>
