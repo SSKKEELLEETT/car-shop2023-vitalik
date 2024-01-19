@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/assets/css/form.css">
 		<title>Form</title>
 	</head>
 	<body>
@@ -45,10 +46,12 @@
                     <label for="drive-ex">Drive expirience</label>
                     <select id="drive-ex" name="model">
                         <option value="---" selected>---</option>
-                        <option value="1-5">1-5 years</option>
-                        <option value="5-10">5-10 years</option>
-                        <option value="10-15">10-15 years</option>
-                        <option value="15-20">15-20 years</option>
+                        <option value="expert">expert</option>
+                        <option value="more than 10">more than 10</option>
+                        <option value="5-10">5-10</option>
+                        <option value="2-5">2-5</option>
+                        <option value="less than 2">less than 2</option>
+                        <option value="beginner">beginner</option>
                     </select>
                 </div>
     
@@ -150,8 +153,8 @@
                 </div>
 			</fieldset>
 			
-			<button type="reset">Cancel</button>
-			<button type="submit">Ok</button>
+			<button class="button" type="reset">Cancel</button>
+			<button class="button" type="submit">Ok</button>
 		</form>
 	</body>
 </html>
