@@ -1,10 +1,9 @@
-form{
+.form-elem {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center; 
 }
 
 .button {
-align-self:flex-end;
-
+    display: flex;
+    justify-content: center; 
 }
